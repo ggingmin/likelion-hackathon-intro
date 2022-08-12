@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>University Students List</h1>
+    {% for student in student_list %}
+    <ul class="list-group">
+        <li class="list-group-item">학번: {{ student.student_num }}</li>
+        <li class="list-group-item">이름: {{ student.name }}</li>
+        <li class="list-group-item">단과대학: {{ student.college }}</li>
+        <li class="list-group-item">학과: {{ student.major }}</li>
+        <li class="list-group-item">상태: {{ student.student_type }}</li>
+        <li class="list-group-item">입학일자: {{ student.entrance_date }}</li>
+    </ul>
+    {% endfor %}
+</div>
